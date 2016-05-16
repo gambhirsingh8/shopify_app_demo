@@ -1,0 +1,8 @@
+{
+  "name": "Heroku Shopify app for Display Products",
+  "description": "A Shopify Rails app, which can easily be deployed to Heroku",
+  "image": "heroku/ruby",
+  "repository": "https://github.com/gambhirsingh8/test-app8.git",
+  "keywords": ["ruby", "rails" ],
+  "addons": [ "heroku-postgresql" ]
+}
