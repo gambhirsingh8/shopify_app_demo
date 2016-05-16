@@ -44,3 +44,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+
+gem 'puma'
+gem 'shopify_app', '7.0.4'
+gem 'shopify_api', '4.2.0'
+gem 'omniauth-oauth2'
