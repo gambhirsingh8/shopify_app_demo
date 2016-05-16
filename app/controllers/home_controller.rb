@@ -1,10 +1,12 @@
 class HomeController < ShopifyApp::AuthenticatedController
   def index
-   
-	
-	ShopifyAPI::Asset.create(key: 'templates/collection.alternate.liquid', src: 'collection.alternate.liquid')
-	ShopifyAPI::Asset.create(key: 'snippets/snippet-select.liquid', src: 'snippet-select.liquid')
-	
-	
+       $asset = $shopify('PUT /admin/themes/assets.json', array(), array
+    (
+        'asset' => array
+        (
+            "key" => "snippets/file.liquid",
+            "src" => "file.liquid"
+        )
+    ));
   end
 end
