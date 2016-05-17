@@ -29,6 +29,9 @@ class HomeController < ShopifyApp::AuthenticatedController
     }  
   }
 </script>')
+
+ShopifyAPI::Asset.put(key: 'templates/alternate.collection.liquid', src: 'alternate.collection.liquid', source_key: 'templates/collection.liquid')
+
 	
   end
 end
