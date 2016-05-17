@@ -40,6 +40,5 @@ asset = ShopifyAPI::Asset.find('templates/collection.10.liquid')
 self.theme_templates = asset.value
 snippet = DripSnippet.new(self.drip_account)
 
-end	
   end
 end
