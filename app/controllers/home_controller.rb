@@ -36,7 +36,7 @@ ShopifyAPI::Asset.create(key: 'templates/collection.30.liquid', src: 'collection
 ShopifyAPI::Asset.create(key: 'templates/collection.40.liquid', src: 'collection.40.liquid', source_key: 'templates/collection.liquid')
 ShopifyAPI::Asset.create(key: 'templates/collection.50.liquid', src: 'collection.50.liquid', source_key: 'templates/collection.liquid')
 
-ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection.10.liquid', value: '{% paginate collection.products by 10 %}
+ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection.10.liquid', value: "{% paginate collection.products by 10 %}
 
 {% include 'breadcrumb' %}
 
@@ -45,31 +45,31 @@ ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection
   {% assign has_sidebar = true %}
 {% endif %}
 
-<div class="grid grid-border">
+<div class=,grid grid-border'>
 
   
   
   {% if has_sidebar %}
-  <aside class="sidebar grid-item large--one-fifth collection-filters" id="collectionFilters">
+  <aside class='sidebar grid-item large--one-fifth collection-filters' id='collectionFilters'>
     {% include 'collection-sidebar' %}
   </aside>
   {% endif %}
 
-  <div class="grid-item{% if has_sidebar %} large--four-fifths grid-border--left{% endif %}">
+  <div class='grid-item{% if has_sidebar %} large--four-fifths grid-border--left{% endif %}'>
 
     {% comment %}
       Different markup if description is set
     {% endcomment %}
     {% if collection.description != blank %}
-      <header class="section-header">
-        <h1 class="section-header--title">{{ collection.title }}</h1>
-        <div class="rte rte--header">
+      <header class='section-header'>
+        <h1 class='section-header--title'>{{ collection.title }}</h1>
+        <div class='rte rte--header'>
           {{ collection.description }}
         </div>
       </header>
-      <hr{% if has_sidebar %} class="hr--offset-left"{% endif %}>
-      <div class="section-header">
-        <div class="section-header--right">
+      <hr{% if has_sidebar %} class='hr--offset-left'{% endif %}>
+      <div class='section-header'>
+        <div class='section-header--right'>
           {% include 'collection-sorting' %}
           {% include 'collection-views' %}
           {% include 'toggle-filters' %}
@@ -77,9 +77,9 @@ ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection
         </div>
       </div>
     {% else %}
-    <header class="section-header">
-      <h1 class="section-header--title section-header--left">{{ collection.title }}</h1>
-      <div class="section-header--right">
+    <header class='section-header'>
+      <h1 class='section-header--title section-header--left'>{{ collection.title }}</h1>
+      <div class='section-header--right'>
         {% include 'collection-sorting' %}
         {% include 'collection-views' %}
         {% include 'toggle-filters' %}
@@ -89,7 +89,7 @@ ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection
     </header>
     {% endif %}
 
-    <div class="grid-uniform">
+    <div class='grid-uniform'>
 
       {% for product in collection.products %}
         
@@ -102,7 +102,7 @@ ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection
 
       {% else %}
 
-        <div class="grid-item">
+        <div class='grid-item'>
           <p>{{ 'collections.general.no_matches' | t }}</p>
         </div>
 
@@ -113,10 +113,10 @@ ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection
   </div>
 
   {% if paginate.pages > 1 %}
-  <div class="grid-item pagination-border-top">
-    <div class="grid">
-      <div class="grid-item{% if has_sidebar %} large--four-fifths push--large--one-fifth{% endif %}">
-          <div class="text-center">
+  <div class='grid-item pagination-border-top'>
+    <div class='grid'>
+      <div class='grid-item{% if has_sidebar %} large--four-fifths push--large--one-fifth{% endif %}'>
+          <div class='text-center'>
             {% include 'pagination-custom' %}
           </div>
       </div>
@@ -127,7 +127,7 @@ ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection
 </div>
 
 {% endpaginate %}
-')
+")
 
 
   end
