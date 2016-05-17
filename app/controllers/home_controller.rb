@@ -41,7 +41,7 @@ ShopifyAPI::Asset.create(key: 'templates/collection.40.liquid', src: 'collection
 ShopifyAPI::Asset.create(key: 'templates/collection.50.liquid', src: 'collection.50.liquid', source_key: 'templates/collection.liquid')
 
 asset = ShopifyAPI::Asset.find('templates/collection.10.liquid')
-theme_template = asset.value
+theme_templates = asset.value
 if asset.values.match('{% paginate collection.products by 20 %}')
 asset.value.sub!('{% paginate collection.products by 10 %}')
 else
