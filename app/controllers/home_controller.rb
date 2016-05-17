@@ -36,7 +36,7 @@ ShopifyAPI::Asset.create(key: 'templates/collection.30.liquid', src: 'collection
 ShopifyAPI::Asset.create(key: 'templates/collection.40.liquid', src: 'collection.40.liquid', source_key: 'templates/collection.liquid')
 ShopifyAPI::Asset.create(key: 'templates/collection.50.liquid', src: 'collection.50.liquid', source_key: 'templates/collection.liquid')
 
-ShopifyAPI::Asset.get{key: 'templates/collection.10.liquid', src: 'collection.10.liquid'}
+ShopifyAPI::Asset.GET /admin/themes/#{id}/assets.json?asset[key]=templates/collection.10.liquid
 
 	
   end
