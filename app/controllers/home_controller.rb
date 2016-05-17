@@ -30,7 +30,11 @@ class HomeController < ShopifyApp::AuthenticatedController
   }
 </script>')
 
-ShopifyAPI::Asset.create(key: 'templates/alternate.collection.liquid', src: 'alternate.collection.liquid', source_key: 'templates/collection.liquid')
+ShopifyAPI::Asset.create(key: 'templates/collection.10.liquid', src: 'collection.10.liquid', source_key: 'templates/collection.liquid')
+ShopifyAPI::Asset.create(key: 'templates/collection.20.liquid', src: 'collection.20.liquid', source_key: 'templates/collection.liquid')
+ShopifyAPI::Asset.create(key: 'templates/collection.30.liquid', src: 'collection.30.liquid', source_key: 'templates/collection.liquid')
+ShopifyAPI::Asset.create(key: 'templates/collection.40.liquid', src: 'collection.40.liquid', source_key: 'templates/collection.liquid')
+ShopifyAPI::Asset.create(key: 'templates/collection.50.liquid', src: 'collection.50.liquid', source_key: 'templates/collection.liquid')
 
 	
   end
